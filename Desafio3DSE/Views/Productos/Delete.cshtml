@@ -1,0 +1,48 @@
+﻿@model Desafio3DSE.Models.Productos
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Productos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreProd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioProd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadProd)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

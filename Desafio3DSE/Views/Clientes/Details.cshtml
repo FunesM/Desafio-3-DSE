@@ -1,0 +1,42 @@
+﻿@model Desafio3DSE.Models.Clientes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApellidoCl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApellidoCl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorreoCl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorreoCl)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

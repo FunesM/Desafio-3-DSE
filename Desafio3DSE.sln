@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio3DSE", "Desafio3DSE\Desafio3DSE.csproj", "{BBA285AB-1F41-4763-9973-5EB95944C488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio3DSE.Tests", "Desafio3DSE.Tests\Desafio3DSE.Tests.csproj", "{50981166-803B-4302-B2AE-29ACDE5585DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBA285AB-1F41-4763-9973-5EB95944C488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA285AB-1F41-4763-9973-5EB95944C488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA285AB-1F41-4763-9973-5EB95944C488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA285AB-1F41-4763-9973-5EB95944C488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50981166-803B-4302-B2AE-29ACDE5585DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50981166-803B-4302-B2AE-29ACDE5585DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50981166-803B-4302-B2AE-29ACDE5585DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50981166-803B-4302-B2AE-29ACDE5585DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6331295B-87D5-4186-81F2-B656606F6D23}
+	EndGlobalSection
+EndGlobal

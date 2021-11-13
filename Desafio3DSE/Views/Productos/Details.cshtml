@@ -1,0 +1,42 @@
+﻿@model Desafio3DSE.Models.Productos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Productos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreProd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioProd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadProd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

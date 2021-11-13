@@ -1,0 +1,50 @@
+﻿@model Desafio3DSE.Models.Pedidos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pedidos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreProd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadPedida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadPedida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioProd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioProd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

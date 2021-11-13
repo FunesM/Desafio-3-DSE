@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Desafio3DSE.Models.Pedidos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pedidos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreProd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CantidadPedida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrecioProd)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreCl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreProd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CantidadPedida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrecioProd)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.id }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
